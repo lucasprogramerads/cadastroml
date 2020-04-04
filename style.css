@@ -1,0 +1,143 @@
+.text-sm {
+    font-size: small;
+}
+
+.flip-container {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flipper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* .flip-container:hover .flipper{
+    transform: rotateY(180deg);
+} */
+
+#switch:checked ~ .flip-container .flipper {
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.number {
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+.card-numero, .card-titular, .card-validade, .card-cvv {
+    background-color: transparent;
+    border: none;
+    float: left;
+}
+
+@media (max-width: 991px) { /* md */
+    .card-numero {
+        margin-top: 80px;
+        margin-left: 14px;
+        color: white;
+    }
+    .card-titular {
+        margin-top: 12px;
+        width: 140px;
+        margin-left: 14px;
+        color: white;
+        font-size: small;
+    }
+    .card-validade {
+        margin-top: 12px;
+        width: 42px;
+        margin-left: 14px;
+        color: white;
+        font-size: small;
+    }
+    .card-cvv {
+        margin-top: 80px;
+        width: 42px;
+        margin-right: 14px;
+        color: white;
+        font-size: small;
+        float: right;
+    }
+}
+
+@media (max-width: 767px) { /* sm */
+    .card-numero {
+        margin-top: 100px;
+        width: 262px;
+        margin-left: 14px;
+        color: white;
+    }
+    .card-titular {
+        margin-top: 15px;
+        width: 192px;
+        margin-left: 14px;
+        color: white;
+    }
+    .card-validade {
+        margin-top: 15px;
+        width: 55px;
+        margin-left: 14px;
+        color: white;
+    }
+    .card-cvv {
+        margin-top: 100px;
+        width: 42px;
+        margin-right: 14px;
+        color: white;
+        font-size: small;
+        float: right;
+    }
+}
+
+@media (min-width: 992px) { /* lg */
+    .card-numero {
+        margin-top: 110px;
+        width: 274px;
+        margin-left: 14px;
+        color: white;
+        height: 25px;
+        font-size: large;
+    }
+    .card-titular {
+        margin-top: 15px;
+        width: 190px;
+        margin-left: 14px;
+        color: white;
+        height: 25px;
+    }
+    .card-validade {
+        margin-top: 15px;
+        width: 70px;
+        margin-left: 14px;
+        color: white;
+        height: 25px;
+    }
+    .card-cvv {
+        margin-top: 110px;
+        width: 42px;
+        margin-right: 14px;
+        color: white;
+        font-size: small;
+        float: right;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucas Rodrigues de Oliveira</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Lucas Rodrigues de Oliveira">
+  <meta name="description" content="Portfolio pessoal de Lucas Rodrigues de Oliveira.">
+  <meta property="og:image" content="images/ico.png">
+  <meta property="og:title" content="Portfolio Lucas Rodrigues de Oliveira">
+  <meta property="og:description" content="Portfolio pessoal de Lucas Rodrigues de Oliveira.">
+  <link rel="Shortcut Icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="lib/bootstrap.min.css"  crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"  crossorigin="anonymous">
+</head>
+<body>
+  <div class="container position-relative">
+      <h1>Meus Dados</h1>
+      <h4 class="mt-4">Dados Pessoais</h4>
+      <div class="form-row">
+        <div class="col-md-6 col-lg-3 mb-3">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" required>
+        </div>
+        <div class="col-md-7 col-lg-4 mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
+        </div>
+        <div class="col-md-5 col-lg-2 mb-3">
+          <label for="cpf">CPF</label>
+          <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+          <div id="cpf-invalid" class="d-none text-danger text-sm">
+            CPF inválido
+          </div>
+        </div>
+      </div>
+
+      <h4 class="mt-4">Endereço</h4>
+      <div class="form-row">
+        <div class="col-md-3 mb-3">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-control" id="cep" placeholder="00000-000" required>
+          <div id="cep-invalid" class="d-none text-danger text-sm">
+            CEP inválido
+          </div>
+        </div>
+        <div class="col-md-7 mb-3">
+          <label for="rua">Logradouro</label>
+          <input type="text" class="form-control" id="rua" placeholder="Rua 10" required>
+        </div>
+        <div class="col-md-2 mb-3">
+          <label for="numero">Número</label>
+          <input type="number" class="form-control" id="numero" placeholder="0000" required>
+        </div>
+        <div class="col-md-5 mb-3">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-control" id="bairro" placeholder="Jardim Santana" required>
+        </div>
+        <div class="col-md-5 mb-3">
+          <label for="cidade">Cidade</label>
+          <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="uf">Estado</label>
+          <select id="uf" class="form-control">
+            <option value="AC">Acre (AC)</option>
+            <option value="AL">Alagoas (AL)</option>
+            <option value="AP">Amapá (AP)</option>
+            <option value="AM">Amazonas (AM)</option>
+            <option value="BA">Bahia (BA)</option>
+            <option value="CE">Ceará (CE)</option>
+            <option value="DF">Distrito Federal (DF)</option>
+            <option value="ES">Espírito Santo (ES)</option>
+            <option value="GO">Goiás (GO)</option>
+            <option value="MA">Maranhão (MA)</option>
+            <option value="MT">Mato Grosso (MT)</option>
+            <option value="MS">Mato Grosso do Sul (MS)</option>
+            <option value="MG">Minas Gerais (MG)</option>
+            <option value="PA">Pará (PA)</option>
+            <option value="PB">Paraíba (PB)</option>
+            <option value="PR">Paraná (PR)</option>
+            <option value="PE">Pernambuco (PE)</option>
+            <option value="PI">Piauí (PI)</option>
+            <option value="RJ">Rio de Janeiro (RJ)</option>
+            <option value="RN">Rio Grande do Norte (RN)</option>
+            <option value="RS">Rio Grande do Sul (RS)</option>
+            <option value="RO">Rondônia (RO)</option>
+            <option value="RR">Roraima (RR)</option>
+            <option value="SC">Santa Catarina (SC)</option>
+            <option value="SP">São Paulo (SP)</option>
+            <option value="SE">Sergipe (SE)</option>
+            <option value="TO">Tocantins (TO)</option>
+          </select>
+        </div>
+      </div>
+
+      <h4 class="mt-4">Cartão</h4>
+      <div class="form-row">
+        <div class="col-md-8 mb-3">
+          <div class="row">
+            <div class="col-md-7 mb-3">
+              <label for="numero-cartao">Número do cartão</label>
+              <input type="text" class="form-control" id="numero-cartao" placeholder="0000 0000 0000 0000" required>
+            </div>
+            <div class="col-md-5 mb-3">
+              <label for="validade">Validade</label>
+              <input type="text" class="form-control" id="validade" placeholder="MM/AA" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 mb-3">
+              <label for="titular">Nome do titular</label>
+              <input type="text" class="form-control" id="titular" placeholder="Titular" required>
+            </div>
+            <div class="col-md-5 mb-3">
+              <label for="cvv">Código</label>
+              <input type="number" class="form-control number" id="cvv" placeholder="000" required>
+            </div>
+          </div>
+        </div>
+        <input type="checkbox" id="switch" class="d-none">
+        <div class="col-md-4 mb-3 flip-container">
+          <div class="flipper" >
+            <div class="front">
+              <img class="w-100 position-absolute" src="images/cartao-frente.png">
+              <input type="text" id="card-numero" class="card-numero position-relative">
+              <input type="text" id="card-titular" class="card-titular position-relative">
+              <input type="text" id="card-validade" class="card-validade position-relative">
+            </div>
+            <div class="back">
+              <img class="w-100 position-absolute" src="images/cartao-verso.png">
+              <input type="text" id="card-cvv" class="card-cvv position-relative">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center mb-4">
+          <button class="btn btn-success btn-lg" type="submit">Salvar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="lib/jquery-3.4.1.min.js"></script>
+  <script src="lib/jquery.mask.js"></script>
+  <script src="lib/popper.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="functions.js"></script>
+</body>
+</html>
