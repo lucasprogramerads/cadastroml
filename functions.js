@@ -109,6 +109,7 @@ $('#cvv').focusout(function(){
 
 $('#numero-cartao').mask('0000 0000 0000 0000', {reverse: true});
 $('#validade'     ).mask('00/00'              , {reverse: true});
+$('#cvv'          ).mask('000'                , {reverse: true});
 
 $('#numero-cartao').on('input', function(){
     $('#card-numero').val($('#numero-cartao').val());

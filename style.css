@@ -9,7 +9,7 @@
 }
 
 .flipper{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100%;
     transition: transform 0.8s;
@@ -137,7 +137,38 @@
         width: 42px;
         margin-right: 14px;
         color: white;
-        font-size: small;
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) { /* xlg */
+    .card-numero {
+        margin-top: 140px;
+        width: 274px;
+        margin-left: 14px;
+        color: white;
+        height: 25px;
+        font-size: large;
+    }
+    .card-titular {
+        margin-top: 15px;
+        width: 190px;
+        margin-left: 14px;
+        color: white;
+        height: 25px;
+    }
+    .card-validade {
+        margin-top: 15px;
+        width: 70px;
+        margin-left: 14px;
+        color: white;
+        height: 25px;
+    }
+    .card-cvv {
+        margin-top: 140px;
+        width: 42px;
+        margin-right: 16px;
+        color: white;
         float: right;
     }
 }
